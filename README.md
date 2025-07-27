@@ -20,7 +20,7 @@
 
 ###
 
-<p align="left">I'm Maurício from Brazil<br><br>- 🔭 I’m working as Data Analyst<br>- 📚 I'm currently learning PySpark and Data Engineering with Python</p>
+<p align="left">I'm Maurício from Brazil<br><br>- 🔭 I’m working as Data Analyst in a Trade Marketing Company<br>- 📚 I'm currently learning PySpark and Data Engineering with Python</p>
 
 ###
 
@@ -43,9 +43,5 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="40" alt="sqlalchemy logo"  />
 </div>
-
-###
-
-<h3 align="left">🔥   My Stats :</h3>
 
 ###
