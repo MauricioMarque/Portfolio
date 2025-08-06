@@ -20,7 +20,7 @@
 
 ###
 
-<p align="left">I'm Maurício from Brazil<br><br>- 🔭 I’m a Data Scientist/Data Engineer with a strong BI background Company<br>- 📚 I'm currently learning PySpark and Data Engineering with Python</p>
+<p align="left">I'm Maurício from Brazil<br><br>- 🔭 I’m a Data Scientist/Data Engineer with a strong BI background <br>- 📚 I'm currently learning PySpark and Data Engineering with Python</p>
 
 ###
 
