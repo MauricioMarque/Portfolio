@@ -33,7 +33,7 @@ Uma empresa de varejo necessita de soluções de dados para:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                         DATA PIPELINE                        
+│                         DATA PIPELINE                       
 └─────────────────────────────────────────────────────────────────────┘
 
 ┌──────────────┐        ┌──────────────┐        ┌──────────────┐
@@ -187,7 +187,7 @@ from typing import List, Optional
 - Python 3.9+
 - Acesso ao banco MySQL (credenciais fornecidas)
 - Jupyter Notebook ou JupyterLab
-```
+
 
 ---
 
@@ -196,10 +196,10 @@ from typing import List, Optional
 ```
 data-challenge/
 │
-├── 📓 notebook.ipynb  # Notebook principal
+├── 📓 lnotebook.ipynb  # Notebook principal
 ├── 📄 banco_de_dados.sql       # Queries SQL
 ├── 📖 README.md                              # Documentação
-└── 📁 pipeline                               # Visualizações exportadas
+└── 📁 pipeline                              # Visualizações exportadas
 ```
 
 ---
@@ -306,8 +306,16 @@ data-challenge/
 
 ---
 
+
 ## 📄 Licença
 
 Este projeto foi desenvolvido como parte de um desafio técnico e está disponível para fins educacionais.
 
+---
+
+<div align="center">
+
 **⭐ Se este projeto foi útil, considere dar uma estrela!**
+
+
+</div>
