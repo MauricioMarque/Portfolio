@@ -1,4 +1,4 @@
-# 🎯 Looqbox Data Challenge
+# 🎯 Data Challenge
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 
 **Análise de Dados de Vendas e Produtos com Python e SQL**
 
-[Sobre](#-sobre-o-projeto) • [Desafios](#-desafios) • [Tecnologias](#-tecnologias) • [Instalação](#-instalação) • [Resultados](#-resultados) • [Contato](#-contato)
+[Sobre](#-sobre-o-projeto) • [Desafios](#-desafios) • [Tecnologias](#-tecnologias) • [Instalação](#-instalação) • [Resultados](#-resultados)
 
 </div>
 
@@ -310,10 +310,4 @@ data-challenge/
 
 Este projeto foi desenvolvido como parte de um desafio técnico e está disponível para fins educacionais.
 
----
-
-<div align="center">
-
 **⭐ Se este projeto foi útil, considere dar uma estrela!**
-
-</div>
