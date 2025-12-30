@@ -21,9 +21,3 @@ Este projeto é uma ferramenta de linha de comando (CLI) desenvolvida em Python 
 2. **Normalização**: O script percorre os itens retornados, tratando casos onde o preço ou a moeda não estão disponíveis (exibindo "Não à venda").
 3. **Ordenação**: Antes de exibir os resultados, a lista é ordenada pelo título. Isso é um pré-requisito essencial para o funcionamento da **Busca Binária**.
 4. **Eficiência**: Com a lista ordenada, o sistema está pronto para realizar buscas rápidas de títulos específicos sem precisar percorrer todos os itens sequencialmente.
-
-## 🚀 Como Executar
-
-1. **Clone este repositório:**
-   ```bash
-   git clone
