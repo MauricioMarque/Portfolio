@@ -1,0 +1,238 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definições -->
+  <defs>
+    <!-- Gradientes -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Sombra -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Setas -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f7fafc"/>
+  
+  <!-- Título -->
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2d3748">
+    LOOQBOX DATA PIPELINE
+  </text>
+  <line x1="400" y1="50" x2="800" y2="50" stroke="#667eea" stroke-width="3"/>
+  
+  <!-- CAMADA 1: FONTE DE DADOS -->
+  <g id="data-source">
+    <rect x="50" y="100" width="200" height="250" rx="10" fill="url(#grad1)" filter="url(#shadow)"/>
+    <text x="150" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+      📊 FONTE DE DADOS
+    </text>
+    <line x1="70" y1="145" x2="230" y2="145" stroke="white" stroke-width="2"/>
+    
+    <!-- Itens -->
+    <text x="150" y="175" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">MySQL Database</text>
+    
+    <rect x="70" y="195" width="160" height="35" rx="5" fill="rgba(255,255,255,0.2)"/>
+    <text x="150" y="218" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="white">🏪 data_store_sales</text>
+    
+    <rect x="70" y="240" width="160" height="35" rx="5" fill="rgba(255,255,255,0.2)"/>
+    <text x="150" y="263" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="white">🏢 data_store_cad</text>
+    
+    <rect x="70" y="285" width="160" height="35" rx="5" fill="rgba(255,255,255,0.2)"/>
+    <text x="150" y="308" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="white">📦 data_product</text>
+  </g>
+  
+  <!-- CAMADA 2: CONEXÃO -->
+  <g id="connection">
+    <rect x="320" y="150" width="200" height="150" rx="10" fill="url(#grad2)" filter="url(#shadow)"/>
+    <text x="420" y="180" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+      🔌 CONEXÃO
+    </text>
+    <line x1="340" y1="195" x2="500" y2="195" stroke="white" stroke-width="2"/>
+    
+    <text x="420" y="225" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">SQLAlchemy</text>
+    <text x="420" y="250" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="white">+ PyMySQL</text>
+    <text x="420" y="275" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.9">Queries Parametrizadas</text>
+  </g>
+  
+  <!-- CAMADA 3: PROCESSAMENTO -->
+  <g id="processing">
+    <rect x="590" y="100" width="200" height="250" rx="10" fill="url(#grad3)" filter="url(#shadow)"/>
+    <text x="690" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+      ⚙️ PROCESSAMENTO
+    </text>
+    <line x1="610" y1="145" x2="770" y2="145" stroke="white" stroke-width="2"/>
+    
+    <text x="690" y="175" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Pandas DataFrame</text>
+    
+    <rect x="610" y="195" width="160" height="30" rx="5" fill="rgba(255,255,255,0.2)"/>
+    <text x="690" y="215" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">🧹 Limpeza de Dados</text>
+    
+    <rect x="610" y="235" width="160" height="30" rx="5" fill="rgba(255,255,255,0.2)"/>
+    <text x="690" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">🔄 Transformações</text>
+    
+    <rect x="610" y="275" width="160" height="30" rx="5" fill="rgba(255,255,255,0.2)"/>
+    <text x="690" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">📊 Agregações</text>
+    
+    <rect x="610" y="315" width="160" height="30" rx="5" fill="rgba(255,255,255,0.2)"/>
+    <text x="690" y="335" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">🧮 Cálculos (TM)</text>
+  </g>
+  
+  <!-- CAMADA 4: VISUALIZAÇÃO -->
+  <g id="visualization">
+    <rect x="860" y="150" width="200" height="150" rx="10" fill="url(#grad4)" filter="url(#shadow)"/>
+    <text x="960" y="180" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+      📈 VISUALIZAÇÃO
+    </text>
+    <line x1="880" y1="195" x2="1040" y2="195" stroke="white" stroke-width="2"/>
+    
+    <text x="960" y="225" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Plotly Express</text>
+    <text x="960" y="250" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="white">Gráficos Interativos</text>
+    <text x="960" y="275" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.9">Dashboards Dinâmicos</text>
+  </g>
+  
+  <!-- SETAS DE CONEXÃO -->
+  <line x1="250" y1="225" x2="320" y2="225" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="520" y1="225" x2="590" y2="225" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="790" y1="225" x2="860" y2="225" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- CHALLENGES SECTION -->
+  <g id="challenges">
+    <text x="100" y="420" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2d3748">
+      🎯 DESAFIOS IMPLEMENTADOS
+    </text>
+    <line x1="100" y1="430" x2="500" y2="430" stroke="#667eea" stroke-width="2"/>
+    
+    <!-- Challenge 1 -->
+    <rect x="100" y="450" width="320" height="100" rx="8" fill="white" stroke="#667eea" stroke-width="2" filter="url(#shadow)"/>
+    <text x="260" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#667eea">
+      Challenge 1: Função Dinâmica
+    </text>
+    <text x="120" y="500" font-family="Arial, sans-serif" font-size="13" fill="#4a5568">
+      ✓ retrieve_data(product, store, dates)
+    </text>
+    <text x="120" y="520" font-family="Arial, sans-serif" font-size="13" fill="#4a5568">
+      ✓ Queries parametrizadas + validação
+    </text>
+    <text x="120" y="540" font-family="Arial, sans-serif" font-size="13" fill="#4a5568">
+      ✓ Reutilizável por múltiplas equipes
+    </text>
+    
+    <!-- Challenge 2 -->
+    <rect x="460" y="450" width="320" height="100" rx="8" fill="white" stroke="#f5576c" stroke-width="2" filter="url(#shadow)"/>
+    <text x="620" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#f5576c">
+      Challenge 2: Ticket Médio
+    </text>
+    <text x="480" y="500" font-family="Arial, sans-serif" font-size="13" fill="#4a5568">
+      ✓ Análise Q4 2019 (Out-Dez)
+    </text>
+    <text x="480" y="520" font-family="Arial, sans-serif" font-size="13" fill="#4a5568">
+      ✓ TM = Valor / Quantidade
+    </text>
+    <text x="480" y="540" font-family="Arial, sans-serif" font-size="13" fill="#4a5568">
+      ✓ Agregação por Loja + Categoria
+    </text>
+    
+    <!-- Challenge 3 -->
+    <rect x="820" y="450" width="320" height="100" rx="8" fill="white" stroke="#00f2fe" stroke-width="2" filter="url(#shadow)"/>
+    <text x="980" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00a8cc">
+      Challenge 3: Análise IMDB
+    </text>
+    <text x="840" y="500" font-family="Arial, sans-serif" font-size="13" fill="#4a5568">
+      ✓ 1.000 filmes analisados
+    </text>
+    <text x="840" y="520" font-family="Arial, sans-serif" font-size="13" fill="#4a5568">
+      ✓ Rating vs Receita (dispersão)
+    </text>
+    <text x="840" y="540" font-family="Arial, sans-serif" font-size="13" fill="#4a5568">
+      ✓ Insights estratégicos
+    </text>
+  </g>
+  
+  <!-- OUTPUTS SECTION -->
+  <g id="outputs">
+    <text x="100" y="600" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2d3748">
+      📦 ENTREGÁVEIS
+    </text>
+    <line x1="100" y1="610" x2="350" y2="610" stroke="#38f9d7" stroke-width="2"/>
+    
+    <rect x="100" y="630" width="1040" height="130" rx="8" fill="white" stroke="#38f9d7" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Grid de outputs -->
+    <g transform="translate(130, 660)">
+      <circle cx="0" cy="0" r="8" fill="#43e97b"/>
+      <text x="20" y="5" font-family="Arial, sans-serif" font-size="14" fill="#4a5568">
+        <tspan font-weight="bold">Notebook Python</tspan> • Código refatorado e documentado
+      </text>
+    </g>
+    
+    <g transform="translate(130, 690)">
+      <circle cx="0" cy="0" r="8" fill="#43e97b"/>
+      <text x="20" y="5" font-family="Arial, sans-serif" font-size="14" fill="#4a5568">
+        <tspan font-weight="bold">Queries SQL</tspan> • 3 principais + 5 análises bônus
+      </text>
+    </g>
+    
+    <g transform="translate(130, 720)">
+      <circle cx="0" cy="0" r="8" fill="#43e97b"/>
+      <text x="20" y="5" font-family="Arial, sans-serif" font-size="14" fill="#4a5568">
+        <tspan font-weight="bold">Visualizações</tspan> • Gráficos interativos com Plotly
+      </text>
+    </g>
+    
+    <g transform="translate(640, 660)">
+      <circle cx="0" cy="0" r="8" fill="#43e97b"/>
+      <text x="20" y="5" font-family="Arial, sans-serif" font-size="14" fill="#4a5568">
+        <tspan font-weight="bold">Documentação</tspan> • README completo + comentários
+      </text>
+    </g>
+    
+    <g transform="translate(640, 690)">
+      <circle cx="0" cy="0" r="8" fill="#43e97b"/>
+      <text x="20" y="5" font-family="Arial, sans-serif" font-size="14" fill="#4a5568">
+        <tspan font-weight="bold">Boas Práticas</tspan> • Type hints, validação, segurança
+      </text>
+    </g>
+    
+    <g transform="translate(640, 720)">
+      <circle cx="0" cy="0" r="8" fill="#43e97b"/>
+      <text x="20" y="5" font-family="Arial, sans-serif" font-size="14" fill="#4a5568">
+        <tspan font-weight="bold">Insights</tspan> • Análises estratégicas de negócio
+      </text>
+    </g>
+  </g>
+  
+  <!-- Footer -->
+  <text x="600" y="785" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#718096">
+    Pipeline desenvolvido com Python • Pandas • SQLAlchemy • Plotly
+  </text>
+</svg>
